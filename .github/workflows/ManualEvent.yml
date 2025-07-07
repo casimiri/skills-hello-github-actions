@@ -1,0 +1,10 @@
+name: Manual event starter
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check OS is Linux
+        if: runner.os == 'linux'
+        run: echo "The OS on the runner is $env:RUNNER_OS"
