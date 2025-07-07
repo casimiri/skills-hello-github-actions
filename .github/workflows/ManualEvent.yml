@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check OS is Linux
-        run: echo "The OS on the runner is $env:RUNNER_OS"
+        run: echo "The OS on the runner is $RUNNER_OS"
