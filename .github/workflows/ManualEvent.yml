@@ -7,3 +7,7 @@ jobs:
     steps:
       - name: Check OS is Linux
         run: echo "The OS on the runner is $RUNNER_OS"
+      - name: step_one
+        run: echo "action_state=yellow" >> "$GITHUB_ENV"
+      - name: step_two
+        run: printf '%s\n' "action state is $action_state"
