@@ -16,8 +16,7 @@ jobs:
     name: Download file
     runs-on: ubuntu-latest
     steps:
-    - run: cat file.txt
     - uses: actions/download-artifact@v4.3.0
       with:
         path: file.txt
-      
+    - run: cat file.txt
